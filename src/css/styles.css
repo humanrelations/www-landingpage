@@ -28,14 +28,15 @@ html {
         @apply bg-wildwatermelon border-wildwatermelon text-white;
     }
 
+    .btn-secondary {
+        @apply bg-transparent border-wildwatermelon text-mineshaft;
+    }
+
     .btn:hover,
     .btn-primary:hover,
     .btn-secondary:hover  {
         @apply bg-niagara text-white border-niagara;
-    }
-
-    .btn-secondary {
-        @apply bg-transparent border-wildwatermelon text-mineshaft;
+        text-decoration: none;
     }
 }
 
