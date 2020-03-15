@@ -14,11 +14,21 @@ html {
     .link:hover {
         text-decoration: underline;
     }
-}
+
+    .strike-trough {
+        text-decoration-color: theme('colors.wildwatermelon');
+        text-decoration-line: line-through;
+    }
+
+    .strike-through-xl {
+        outline: 5px theme('colors.wildwatermelon') solid;
+        outline-offset: -30px;
+        display: inline-block;
+        padding: 0 25px;
+        margin: 0 -25px;
+    }
 
 
-
-@responsive {
     .btn {
         @apply bg-transparent py-2 px-6 border border-gray-500 rounded-lg;
         @apply font-light font-roboto;
@@ -38,6 +48,16 @@ html {
         @apply bg-niagara text-white border-niagara;
         text-decoration: none;
     }
+
+    .bg-ellipse-1 {
+        @apply bg-auto bg-no-repeat;
+        background-image: url("../ellipse-1.svg");
+        background-position: center bottom 1rem;
+    } 
+}
+
+.max-w-half {
+    max-width: 50%;
 }
 
 .bg-wave-1 {
@@ -54,24 +74,21 @@ html {
     background-position: center bottom;
 }
 
-.bg-ellipse-1 {
-    @apply bg-auto bg-no-repeat;
-    background-image: url("../ellipse-1.svg");
-    background-position: center bottom 1rem;
-} 
-
 .bg-ellipse-2 {
     @apply bg-contain bg-no-repeat;
     background-image: url("../ellipse-2.svg");
     background-position: center bottom 1rem;
 } 
 
-.strike-through {
-    outline: 5px theme('colors.wildwatermelon') solid;
-    outline-offset: -30px;
-    display: inline-block;
-    padding: 0 25px;
-    margin: 0 -25px;
+
+.coming-soon-arrow {
+    @apply absolute;
+    width: 238px;
+    height: 240px;
+    background-image: url(../arrow.svg);
+    background-size: cover;
+    top: -208px;
+    right: 80px;
 }
 
 .blur {
@@ -82,8 +99,6 @@ html {
     -ms-filter: blur(0.5rem);
     filter: blur(0.5rem);
 }
-
-
 
 footer {
     @apply font-light font-roboto text-dovegray;

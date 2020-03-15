@@ -10,7 +10,7 @@
     <body>
         <header class="bg-wildsand">
             <div class="mx-auto max-w-screen-xl p-2">
-                <nav class="py-2">
+                <nav class="py-2 mb-3 border-b-4 border-white lg:border-0 lg:mb-0">
                     <ul class="list-none text-center lg:text-right lg:mt-6">
                         <li class="inline-block">
                             <a class="link lg:btn lg:btn-primary" href="#unsere-produkte">Unsere Produkte</a>
@@ -21,11 +21,11 @@
                     </ul>
                 </nav>
                 <div class="lg:flex">
-                    <div class="lg:w-2/5 py-2 bg-ellipse-1">
+                    <div class="lg:w-2/5 py-2 lg:bg-ellipse-1">
                         <a href="javascript:window.location.reload();">
-                            <img class="object-contain" src="assets/logo.svg">
+                            <img class="object-contain max-w-half lg:max-w-full" src="assets/logo.svg">
                         </a>
-                        <p class="mt-10 lg:mt-20 font-roboto font-light text-2xl">
+                        <p class="mt-10 lg:mt-20 font-roboto font-light text-xl lg:text-2xl">
                             Es ist unsere Mission, die <span class="font-semibold">Lebensqualität eines Jeden</span> 
                             zu verbessern, indem wir die <span class="font-semibold">ideale Organisation</span> mit der 
                             <span class="font-semibold">eigenen Identität</span> verbinden.
@@ -43,6 +43,7 @@
 
         
         <!-- Coming soon  -->
+        <a id="bald-verfuegbar" name="unsere-produkte"></a>
         <section class="mx-auto max-w-screen-xl bg-ellipse-2 p-2 text-center pt-10 lg:pt-20 pb-10 lg:pb-20">
             <h2 class="mx-auto text-center font-worksans font-semibold text-4xl">Wir starten bald!</h2>
             <p class="lg:mx-40 font-light text-lg my-10 text-left">
@@ -58,14 +59,17 @@
         </section>
         <!-- Products  -->
         <a id="unsere-produkte" name="unsere-produkte"></a>
-        <section class="mx-auto max-w-screen-xl p-2 text-center mt-10 lg:mt-20">
-            <h2 class="mx-auto text-center font-worksans font-semibold text-4xl">
-                <span class="strike-through">Unsere Produkte</span><br class="block lg:hidden">
-                <span class="text-wildwatermelon">Bald verfügbar!</span>
+        <section class="mx-auto max-w-screen-xl p-2 text-center my-10 lg:my-20">
+            <h2 class="mx-auto text-center font-worksans font-semibold text-4xl relative">
+                <span class="strike-trough sm:no-underline sm:strike-through-xl">Unsere Produkte</span><br class="block lg:hidden">
+                <span class="text-wildwatermelon">
+                    <a href="#bald-verfuegbar" class="hover:underline">Bald verfügbar!</a>
+                </span>
+                <span class="coming-soon-arrow hidden xl:block"></span>
             </h2>
             <div class="lg:flex my-10 blur">
-                <div class="lg:w-1/2 p-2 text-left">
-                    <h4 class="text-wildwatermelon font-roboto font-medium mb-1">Für Angestellte</h4>
+                <div class="lg:w-1/2 text-left">
+                    <h4 class="text-wildwatermelon font-roboto font-medium mb-1">FÜR ANGESTELLTE</h4>
                     <h3 class="font-roboto font-medium text-2xl">Value Finder & Company Match</h3>
                     <p class="py-2 text-lg font-light my-2">
                         außer um Vorteile daraus zu ziehen? Aber wer hat irgend ein Recht, 
@@ -75,11 +79,14 @@
                         Auch gibt es niemanden, der den Schmerz an sich liebt,
                     </p>
                     <a class="btn btn-primary my-2 inline-block" href="#">Mach den Test</a>
-                    <img class="object-contain mx-auto m-4 lg:mt-16" src="assets/finder.svg">
                 </div>
-                <div class="lg:w-1/2 p-2 text-left">
-                    <img class="object-contain mx-auto m-4 lg:mb-16" src="assets/highfive.svg">
-                    <h4 class="text-wildwatermelon font-roboto font-medium mb-1">Für Arbeitgeber</h4>
+                <div class="lg:w-1/2">
+                    <img class="mx-auto" src="assets/highfive.svg">
+                </div>
+            </div>
+            <div class="lg:flex lg:flex-row-reverse blur">
+                <div class="lg:w-1/2 text-left">
+                    <h4 class="text-wildwatermelon font-roboto font-medium mb-1">FÜR ARBEITGEBER</h4>
                     <h3 class="font-roboto font-medium text-2xl">Entdeckt eure Firmen-Persona</h3>
                     <p class="py-2 text-lg font-light my-2">
                         außer um Vorteile daraus zu ziehen? Aber wer hat irgend ein Recht, 
@@ -90,11 +97,14 @@
                     </p>
                     <a class="btn btn-primary my-2 inline-block lg:mt-4" href="#">Jetzt Firmen-Persona Ermitteln</a>
                 </div>
+                <div class="lg:w-1/2">
+                    <img class="mx-auto" src="assets/finder.svg">
+                </div>
             </div>
         </section>
         <div class="bg-wave-2 -mb-px"></div>
         <footer class="bg-wildsand">
-            <div class="mx-auto max-w-screen-xl">
+            <div class="mx-auto max-w-screen-xl px-2">
                 <div class="lg:flex lg:text-left pb-10 text-center">
                     <div class="lg:w-1/2 mb-4 lg:mb-0">
                         <ul>
