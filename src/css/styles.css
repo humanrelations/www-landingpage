@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    @apply border-white border-16;
+}
+
+@responsive {
+    .link {
+        @apply font-light font-roboto text-dovegray;
+    }
+
+    .link:hover {
+        text-decoration: underline;
+    }
+}
+
+
+
+@responsive {
+    .btn {
+        @apply bg-transparent py-2 px-6 border border-gray-500 rounded-lg;
+        @apply font-light font-roboto;
+    }
+
+    .btn-primary {
+        @apply bg-wildwatermelon border-wildwatermelon text-white;
+    }
+
+    .btn:hover,
+    .btn-primary:hover,
+    .btn-secondary:hover  {
+        @apply bg-niagara text-white border-niagara;
+    }
+
+    .btn-secondary {
+        @apply bg-transparent border-wildwatermelon text-mineshaft;
+    }
+}
+
+.bg-wave-1 {
+    @apply bg-cover;
+    background-image: url("../wave-1.svg");
+    height: 7.5rem;
+    background-position: center bottom;
+}
+
+.bg-wave-2 {
+    @apply bg-cover;
+    background-image: url("../wave-2.svg");
+    height: 7.5rem;
+    background-position: center bottom;
+}
+
+.bg-ellipse-1 {
+    @apply bg-auto bg-no-repeat;
+    background-image: url("../ellipse-1.svg");
+    background-position: center bottom 1rem;
+} 
+
+.bg-ellipse-2 {
+    @apply bg-contain bg-no-repeat;
+    background-image: url("../ellipse-2.svg");
+    background-position: center bottom 1rem;
+} 
+
+.strike-through {
+    outline: 5px theme('colors.wildwatermelon') solid;
+    outline-offset: -30px;
+    display: inline-block;
+    padding: 0 25px;
+    margin: 0 -25px;
+}
+
+.blur {
+    @apply pointer-events-none;
+    -webkit-filter: blur(0.5rem);
+    -moz-filter: blur(0.5rem);
+    -o-filter: blur(0.5rem);
+    -ms-filter: blur(0.5rem);
+    filter: blur(0.5rem);
+}
+
+
+
+footer {
+    @apply font-light font-roboto text-dovegray;
+}
+
+footer a {
+    @apply font-normal;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

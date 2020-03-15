@@ -1,0 +1,13 @@
+{
+  "license": "UNLICENSED",
+  "dependencies": {
+    "purgecss": "^2.1.0",
+    "tailwindcss": "^1.2.0",
+    "uglifycss": "^0.0.29"
+  },
+  "scripts": {
+    "css:build": "tailwindcss build src/css/styles.css -o assets/css/styles.css",
+    "css:purge": "purgecss -c purgecss.config.js -o assets/css",
+    "css:minify": "uglifycss assets/css/styles.css --output assets/css/styles.css"
+  }
+}
