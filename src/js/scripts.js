@@ -16,6 +16,8 @@ const nav = ($link, $menu, $links, $backdrop) => {
 
     $link.addEventListener("click", (event) => {
         event.stopPropagation();
+        event.preventDefault();
+        
         if ($menu.classList.contains(classes.slideOut)) {
             $menu.classList.replace(classes.slideOut, classes.slideIn);
             $body.classList.replace(classes.overflowAuto, classes.overflowHidden);

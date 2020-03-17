@@ -4,8 +4,10 @@ install:
 build:
 	yarn build:js
 	yarn build:css
+	yarn prefix:css
 	yarn purge:css
 	yarn minify:css
 
 run: build
-	open index.html
+	yarn serve
+
