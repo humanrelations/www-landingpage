@@ -3,11 +3,13 @@
   "dependencies": {
     "purgecss": "^2.1.0",
     "tailwindcss": "^1.2.0",
+    "uglify-js-es6": "^2.8.9",
     "uglifycss": "^0.0.29"
   },
   "scripts": {
-    "css:build": "tailwindcss build src/css/styles.css -o assets/css/styles.css",
-    "css:purge": "purgecss -c purgecss.config.js -o assets/css",
-    "css:minify": "uglifycss assets/css/styles.css --output assets/css/styles.css"
+    "build:css": "tailwindcss build src/css/styles.css -o assets/css/styles.css",
+    "purge:css": "purgecss -c purgecss.config.js -o assets/css",
+    "minify:css": "uglifycss assets/css/styles.css --output assets/css/styles.css",
+    "build:js": "uglifyjs --compress --mangle --screw-ie8  --output assets/js/scripts.js src/js/scripts.js"
   }
 }

@@ -3,25 +3,38 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Work+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
         <link href="assets/css/styles.css" rel="stylesheet">
+        <script src="assets/js/scripts.js"></script>
     </head>
-    <body>
-        <header class="bg-wildsand">
-            <div class="mx-auto max-w-screen-xl p-2">
-                <nav class="py-2 mb-3 border-b-4 border-white lg:border-0 lg:mb-0">
-                    <ul class="list-none text-center lg:text-right lg:mt-6">
-                        <li class="inline-block">
-                            <a class="link lg:btn lg:btn-primary" href="#unsere-produkte">Unsere Produkte</a>
+    <body class="relative">
+        <header class="bg-wildsand px-4">
+            <div class="mx-auto max-w-screen-xl">
+                <nav class="py-2">
+                    <a id="dd-link" class="bg-menu block w-8 h-8 absolute top-4 right-4 z-20 lg:hidden lg:relative" href="#">
+                        <span class="sr-only">Menu</span>
+                    </a>
+                    <ul id="dd-menu" class="list-none text-left bg-white fixed z-20 top-0 h-screen slider slide-out w-3/4 pt-8 pl-4 lg:p-0 lg:transition-none lg:left-0 lg:text-right lg:bg-transparent lg:relative lg:h-auto lg:w-auto lg:block lg:mt-6">
+                        
+                        <li class="mb-2 lg:mb-0 lg:inline-block">
+                            <a class="link text-xl lg:btn lg:btn-primary" href="#unsere-produkte">Unsere Produkte</a>
                         </li>
-                        <li class="inline-block ml-2">
-                            <a class="link lg:btn lg:btn-secondary" href="https://medium.com/human-relations">Unser Blog</a>
+                        <li class="mb-2 lg:inline-block lg:mb-0 lg:ml-2">
+                            <a class="link text-xl lg:btn lg:btn-secondary" href="https://medium.com/human-relations">Unser Blog</a>
+                        </li>
+                        <li class="lg:hidden">
+                            <a class="link text-xl" href="#">Das Team</a>
+                        </li>
+                        <li class="mt-4 mb-8 absolute bottom-24 left-4 lg:hidden">
+                            <img class="object-contain max-w-half" src="assets/logo.svg">
                         </li>
                     </ul>
+                    <span id="dd-backdrop" class="bg-black hidden h-screen w-screen fixed top-0 right-0 opacity-25 z-10 lg:hidden"></span>
                 </nav>
                 <div class="lg:flex">
-                    <div class="lg:w-2/5 py-2 lg:bg-ellipse-1">
+                    <div class="lg:w-2/5 lg:bg-ellipse-1">
+                        <h1 class="sr-only">Human Relations</h1>
                         <a href="javascript:window.location.reload();">
                             <img class="object-contain max-w-half lg:max-w-full" src="assets/logo.svg">
                         </a>
@@ -38,13 +51,9 @@
             </div>
         </header>
         <div class="bg-wave-1"></div>
-
-
-
-        
         <!-- Coming soon  -->
         <a id="bald-verfuegbar" name="unsere-produkte"></a>
-        <section class="mx-auto max-w-screen-xl bg-ellipse-2 p-2 text-center pt-10 lg:pt-20 pb-10 lg:pb-20">
+        <section class="mx-auto max-w-screen-xl bg-ellipse-2 px-4 text-center pt-10 lg:pt-20 pb-10 lg:pb-20">
             <h2 class="mx-auto text-center font-worksans font-semibold text-4xl">Wir starten bald!</h2>
             <p class="lg:mx-40 font-light text-lg my-10 text-left">
                 Ihr wollt den Launch von Human Relations nicht verpassen? 
@@ -59,8 +68,8 @@
         </section>
         <!-- Products  -->
         <a id="unsere-produkte" name="unsere-produkte"></a>
-        <section class="mx-auto max-w-screen-xl p-2 text-center my-10 lg:my-20">
-            <h2 class="mx-auto text-center font-worksans font-semibold text-4xl relative">
+        <section class="mx-auto max-w-screen-xl  px-4 text-center my-10 relative lg:my-20">
+            <h2 class="mx-auto text-center font-worksans font-semibold text-4xl">
                 <span class="strike-trough sm:no-underline sm:strike-through-xl">Unsere Produkte</span><br class="block lg:hidden">
                 <span class="text-wildwatermelon">
                     <a href="#bald-verfuegbar" class="hover:underline">Bald verfügbar!</a>
@@ -71,7 +80,7 @@
                 <div class="lg:w-1/2 text-left">
                     <h4 class="text-wildwatermelon font-roboto font-medium mb-1">FÜR ANGESTELLTE</h4>
                     <h3 class="font-roboto font-medium text-2xl">Value Finder & Company Match</h3>
-                    <p class="py-2 text-lg font-light my-2">
+                    <p class="text-lg font-light my-2">
                         außer um Vorteile daraus zu ziehen? Aber wer hat irgend ein Recht, 
                         einen Menschen zu tadeln, der <span class="font-semibold">die Entscheidung trifft</span>, eine Freude 
                         zu genießen, die keine unangenehmen Folgen hat, oder einen, der 
@@ -88,7 +97,7 @@
                 <div class="lg:w-1/2 text-left">
                     <h4 class="text-wildwatermelon font-roboto font-medium mb-1">FÜR ARBEITGEBER</h4>
                     <h3 class="font-roboto font-medium text-2xl">Entdeckt eure Firmen-Persona</h3>
-                    <p class="py-2 text-lg font-light my-2">
+                    <p class="text-lg font-light my-2">
                         außer um Vorteile daraus zu ziehen? Aber wer hat irgend ein Recht, 
                         einen Menschen zu tadeln, der <span class="font-semibold">die Entscheidung trifft</span>, eine Freude 
                         zu genießen, die keine unangenehmen Folgen hat, oder einen, der 
@@ -103,7 +112,7 @@
             </div>
         </section>
         <div class="bg-wave-2 -mb-px"></div>
-        <footer class="bg-wildsand">
+        <footer class="bg-wildsand px-4">
             <div class="mx-auto max-w-screen-xl px-2">
                 <div class="lg:flex lg:text-left pb-10 text-center">
                     <div class="lg:w-1/2 mb-4 lg:mb-0">

@@ -80,6 +80,10 @@ html {
     background-position: center bottom 1rem;
 } 
 
+.bg-menu {
+    @apply bg-cover bg-no-repeat bg-center;
+    background-image: url("../menu.svg");
+}
 
 .coming-soon-arrow {
     @apply absolute;
@@ -92,7 +96,7 @@ html {
 }
 
 .blur {
-    @apply pointer-events-none;
+    @apply pointer-events-none z-0;
     -webkit-filter: blur(0.5rem);
     -moz-filter: blur(0.5rem);
     -o-filter: blur(0.5rem);
@@ -110,4 +114,20 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+.slider {
+    @apply left-0;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.slide-out {
+    @apply duration-500 -left-3/4;
+}
+
+.slide-in {
+    @apply left-0;
 }

@@ -21,6 +21,14 @@ module.exports = {
       borderWidth: {
         '16': '16px',
       },
+      inset: {
+        '4': '1rem',
+        '8': '2rem',
+        '16': '4rem',
+        '24': '6rem',
+        '32': '8rem',
+        '-3/4': '-75%'
+      }
     },
   },
   variants: {},

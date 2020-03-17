@@ -2,9 +2,10 @@ install:
 	yarn
 
 build:
-	yarn css:build
-	yarn css:purge
-	yarn css:minify
+	yarn build:js
+	yarn build:css
+	yarn purge:css
+	yarn minify:css
 
 run: build
 	open index.html
